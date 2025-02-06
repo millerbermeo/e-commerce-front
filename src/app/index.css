@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+html {
+    overscroll-behavior: smooth;
+}
+
+  /* Personalizar la barra de desplazamiento para toda la página */
+  * {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #888 #e0e0e0; /* Firefox (thumb gris y track gris claro) */
+  }
+  
+  /* Para navegadores basados en Webkit (Chrome, Safari) */
+  *::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #e0e0e0; /* Track gris claro */
+    border-radius: 10px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: #888; /* Thumb gris */
+    border-radius: 10px;
+    border: 3px solid #e0e0e0; /* Borde gris claro para separar el thumb del track */
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Thumb gris más oscuro al pasar el ratón */
+  }
