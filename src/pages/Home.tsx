@@ -9,6 +9,8 @@ import PcIcon from '../shared/icons/PcIcon';
 import CellIcon from '../shared/icons/CellIcon';
 import SoundIcon from '../shared/icons/SoundIcon';
 import ServerIcon from '../shared/icons/ServerIcon';
+import GalleryCard from '../features/home/components/GalleryCard';
+
 
 const Home: React.FC = () => {
 
@@ -72,12 +74,12 @@ const Home: React.FC = () => {
 
                         <div className='w-full flex justify-end items-end flex-col'>
 
-                            <div className='relative rounded-full bg-white w-[400px] 2xl:w-[500px] h-[400px] 2xl:h-[500px] border-white border-2'>
-                                <img className='w-[450px] 2xl:w-[560px] 2xl:h-[470px] absolute -left-24 -bottom-5' src={portatil2} alt="" />
+                            <div className='relative rounded-full bg-[#2C5364] w-[400px] 2xl:w-[500px] h-[400px] 2xl:h-[500px] border-[#2b6781] border-3'>
+                                <img className='w-[450px] 2xl:w-[560px] 2xl:h-[470px] absolute -left-24 -bottom-5' src='https://www.microxol.com/wp-content/uploads/2023/04/Product_20230415113210913378521.Katana-4.webp' alt="" />
                             </div>
 
                             <div className='w-[500px] pt-6'>
-                                <p className='font-black text-4xl 2xl:text-5xl text-center text-white'>Poratil Asus TX1</p>
+                                <p className='font-black text-4xl 2xl:text-5xl text-center text-white'>Portatil <span className='text-[#F703FB]'>Asus TX1</span></p>
                             </div>
 
                         </div>
@@ -112,7 +114,7 @@ const Home: React.FC = () => {
                         </div>
 
                         <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white scale-110">
-                            <img className="w-full" src={portatil1} alt="Laptop potente" />
+                            <img className="w-full" src={portatil2} alt="Laptop potente" />
 
                             <div className="px-6 py-4">
                                 <div className="font-bold text-xl mb-2">Eficiencia y velocidad</div>
@@ -144,6 +146,11 @@ const Home: React.FC = () => {
                         </div>
 
                     </section>
+
+
+                  <section className='container mx-auto'>
+                  <GalleryCard />
+                  </section>
 
 
 
