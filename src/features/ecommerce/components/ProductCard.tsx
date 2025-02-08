@@ -90,7 +90,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
                 <p className="text-gray-600 text-sm">{product.description}</p>
                 <div className="mt-3 flex justify-between items-center">
                     <span className="text-xl font-bold text-blue-600">${product.price.toFixed(2)}</span>
-                    <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                    <button className="bg-black text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
                         Añadir al carrito
                     </button>
                 </div>
