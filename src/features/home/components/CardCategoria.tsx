@@ -1,11 +1,16 @@
-import React from 'react'
-import HomeIcon from '../../../shared/icons/HomeIcon'
+import React, { ReactNode } from 'react'
 
-const CardCategoria: React.FC = () => {
+interface CardProps {
+  element: ReactNode
+}
+
+const CardCategoria: React.FC<CardProps> = ({element}) => {
   return (
     <>
         <div className='w-20 h-20 flex justify-center items-center text-white bg-blue-900 rounded-full'>
-            <HomeIcon />
+            <span className='scale-150'>
+            {element}
+            </span>
         </div>
     </>
   )

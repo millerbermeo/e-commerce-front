@@ -34,12 +34,16 @@ const Navbar: React.FC = () => {
 
                 {/* Botones y enlaces */}
                 <div className="flex items-center space-x-7">
-                    <button className="hover:text-blue-500 flex gap-x-1 items-end">
-                        <HomeIcon /> Home
-                    </button>
-                    <button className=" hover:text-blue-500 flex gap-x-1 items-end">
-                        <ShopIcon /> Compras
-                    </button>
+                    <Link to='/'>
+                        <button className="hover:text-blue-500 flex gap-x-1 items-end">
+                            <HomeIcon /> Home
+                        </button>
+                    </Link>
+                    <Link to='/productos'>
+                        <button className=" hover:text-blue-500 flex gap-x-1 items-end">
+                            <ShopIcon /> Catalogo
+                        </button>
+                    </Link>
                     <Link
                         to="/logout"
                         className=" hover:text-red-500 flex gap-x-1 items-end"

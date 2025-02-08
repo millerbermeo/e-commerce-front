@@ -1,10 +1,10 @@
 import React from 'react'
-import Home from '../pages/Home'
+import RoutesApp from '../shared/routes/RoutesApp'
 
 const App: React.FC = () => {
   return (
 
-    <><Home /></>
+   <RoutesApp />
 
   )
 }
