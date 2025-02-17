@@ -5,7 +5,7 @@ import MailIcon from "../icons/MailIcon";
 
 const TopBar: React.FC = () => {
     return (
-        <div className="w-full bg-black text-white  py-3 text-base px-20 flex items-center justify-between absolute z-30 top-0">
+        <div className="w-full bg-black text-white  py-3 text-base px-20 hidden lg:flex items-center justify-between absolute z-30 top-0">
             {/* Mensaje de promoción o novedades */}
             <p className="flex-1">
                 🚀 ¡Última tecnología al mejor precio! Envíos gratis en compras mayores a $100 USD.

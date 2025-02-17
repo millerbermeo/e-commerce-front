@@ -82,6 +82,17 @@ const products: Product[] = [
 ];
 
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
+
+    const handleWhatsAppRedirect = (productId: number) => {
+        const phoneNumber = "598649169989223"; // Reemplázalo con el número de WhatsApp real
+        // const message = `Hola, estoy interesado en el producto con ID: ${productId}. ¿Podrías darme más información?`;
+        const message = `${productId}`;
+
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+        window.open(url, "_blank");
+    };
+
     return (
         <div className="bg-white border border-gray-400 rounded-2xl shadow-md hover:shadow-lg transition overflow-hidden ">
             <img className="w-full h-48 object-cover" src={product.imageUrl} alt={product.name} />
@@ -90,8 +101,10 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
                 <p className="text-gray-600 text-sm">{product.description}</p>
                 <div className="mt-3 flex justify-between items-center">
                     <span className="text-xl font-bold text-blue-600">${product.price.toFixed(2)}</span>
-                    <button className="bg-black text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-                        Añadir al carrito
+                    <button
+                        onClick={() => handleWhatsAppRedirect(product.id)}
+                        className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition">
+                        Me interesa
                     </button>
                 </div>
             </div>
