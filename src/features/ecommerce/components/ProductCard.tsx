@@ -12,7 +12,7 @@ interface Product {
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
     const handleWhatsAppRedirect = (productId: number, nombre: string) => {
         const phoneNumber = "15551741095"; // Reemplázalo con el número de WhatsApp real
-        const message = `💬 Me interesa este producto: ${nombre} con código 🆔 ${productId} 🔥`;
+        const message = `💬 Me interesa este producto: ${nombre} con código ${productId}`;
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(url, "_blank");
     };
