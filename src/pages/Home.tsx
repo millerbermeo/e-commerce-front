@@ -148,7 +148,7 @@ const Home: React.FC = () => {
                     </section>
 
 
-                  <section className='container mx-auto'>
+                  <section className='container mx-auto bg-[#121212]'>
                   <GalleryCard />
                   </section>
 
