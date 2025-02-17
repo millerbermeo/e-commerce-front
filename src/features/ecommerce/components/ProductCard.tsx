@@ -84,7 +84,7 @@ const products: Product[] = [
 const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
 
     const handleWhatsAppRedirect = (productId: number) => {
-        const phoneNumber = "598649169989223"; // Reemplázalo con el número de WhatsApp real
+        const phoneNumber = "15551741095"; // Reemplázalo con el número de WhatsApp real
         // const message = `Hola, estoy interesado en el producto con ID: ${productId}. ¿Podrías darme más información?`;
         const message = `${productId}`;
 
