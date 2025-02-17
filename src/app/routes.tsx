@@ -6,8 +6,8 @@ import Ecommerce from "../pages/Ecommerce";
 const RoutesApp: React.FC = () => {
     return (
         <Routes>
-            <Route path= "/" element = {< Home />} />
-            < Route path = "/productos" element = {< Ecommerce />} />
+            <Route path= "/home" element = {< Home />} />
+            < Route path = "/" element = {< Ecommerce />} />
         </Routes>
 
   );
