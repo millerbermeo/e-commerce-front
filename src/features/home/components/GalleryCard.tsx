@@ -18,7 +18,7 @@ const GalleryCard: React.FC = () => {
             </div>
 
 
-            <div className="w-full">
+            <div className="w-[90%] pr-20">
                 <div className="mx-auto">
                     <div className="mb-6 flex flex-col sm:flex-row items-center justify-between gap-6">
                         <div className="text-center sm:text-left">

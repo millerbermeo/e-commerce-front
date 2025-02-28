@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
     }, [])
 
     return (
-        <nav className={`flex items-center animation duration-500 transition-all w-full ${bgcolor ? 'bg-transparent top-12' : 'bg-black/90 top-0'} z-50 fixed  justify-between  h-[63px] text-white`}>
+        <nav className={`flex items-center animation duration-500 transition-all px-5 w-full ${bgcolor ? 'bg-transparent top-12' : 'bg-black/90 top-0'} z-50 fixed  justify-between  h-[63px] text-white`}>
             <div className='container mx-auto flex justify-between'>
                 {/* Logo o Título */}
                 <div className="flex items-center space-x-4">

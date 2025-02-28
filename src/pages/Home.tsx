@@ -45,9 +45,9 @@ const Home: React.FC = () => {
                     {!show ? 'Explorar más tecnologías' : 'Ocultar contenido'}
                 </button>
 
-                {show ? <div className='bg-gradient-to-b from-[#0F2027] via-[#203A43] to-[#2C5364]'>
+                 <div className='bg-gradient-to-b from-[#0F2027] via-[#203A43] to-[#2C5364]'>
 
-                    <section className='w-full flex justify-center gap-10 container mx-auto py-40'>
+                    <section className='flex justify-center gap-10 w-[90%] 2xl:container mx-auto py-40'>
 
                         <div className='w-full flex justify-start items-start flex-col gap-y-5'>
                             <p className='text-white text-2xl'>Encuentra </p>
@@ -97,7 +97,7 @@ const Home: React.FC = () => {
 
                     <section className='w-full bg-gradient-to-b via-[#203A43] to-[#0F2027] py-50 px-16 flex justify-center gap-x-20'>
 
-                        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                        <div className="w-full rounded overflow-hidden shadow-lg bg-white">
                             <img className="w-full" src={portatil1} alt="Laptop avanzada" />
 
                             <div className="px-6 py-4">
@@ -113,7 +113,7 @@ const Home: React.FC = () => {
                             </div>
                         </div>
 
-                        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white scale-110">
+                        <div className="w-full rounded overflow-hidden shadow-lg bg-white scale-110">
                             <img className="w-full" src={portatil2} alt="Laptop potente" />
 
                             <div className="px-6 py-4">
@@ -129,7 +129,7 @@ const Home: React.FC = () => {
                             </div>
                         </div>
 
-                        <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+                        <div className="w-full rounded overflow-hidden shadow-lg bg-white">
                             <img className="w-full" src={portatil1} alt="Laptop moderna" />
 
                             <div className="px-6 py-4">
@@ -154,7 +154,7 @@ const Home: React.FC = () => {
 
 
 
-                </div> : ''}
+                </div> 
 
             </MainLayout>
         </>
