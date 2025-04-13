@@ -10,8 +10,8 @@ type mainLayout = {
 const MainLayout: React.FC<mainLayout> = ({ children }) => {
     return (
         <>
-        <TopBar />
-            <Navbar />
+        {/* <TopBar />
+            <Navbar /> */}
             {children}
 
             <div className='fixed bottom-5 right-5 z-50'>

@@ -1,5 +1,5 @@
 import React from 'react';
-import UserRegisterForm from '../components/UserRegisterForm';
+import UserRegisterForm from '../../../features/users/components/UserRegisterForm';
 
 const UserLayout: React.FC = () => {
   return (
