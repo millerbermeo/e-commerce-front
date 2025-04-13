@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react'
-import Navbar from '../components/Navbar'
+
 import logoWhatsapp from '../../assets/whatsapp.svg'
-import TopBar from '../components/TopBar'
+
 
 type mainLayout = {
     children: ReactNode
