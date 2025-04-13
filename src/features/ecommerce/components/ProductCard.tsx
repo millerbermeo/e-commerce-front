@@ -159,7 +159,7 @@ const ProductCard: React.FC<{ product: Product }> = ({ product }) => {
         const nombreEmpresa = empresa ? empresa.nombre : "Empresa desconocida";
 
         const phoneNumber = "15551741095";
-        const message = `📦 Solicitud de Domicilio
+        const message = `1)📦 Solicitud de Domicilio
   
   Producto: *${product.nombre}*
   Precio: $${product.precio.toLocaleString("es-CO")}
